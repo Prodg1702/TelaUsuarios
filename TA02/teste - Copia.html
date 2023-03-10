@@ -4,6 +4,13 @@
 	<meta charset="UTF-8">
 	<title>Tabela com Barra de Pesquisa</title>
 	<link rel="stylesheet" href="teste - Copia.css">
+	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<script>
+		function toggleButton(button) {
+			button.classList.toggle("selecionado");
+		}
+	</script>
+	
 </head>
 <body>
 
@@ -60,33 +67,20 @@
 
       </div> 
 	
-	  <div class="switch">
+	  <!-- <div class="switch">
 		<label>
 			<input type="checkbox">
 			<span class="slider"></span>
 		  </label>
-	  </div>
+	  </div> -->
+
+	
 
 
       <div class="table">
 
         <h1>Usuários Cadastrados</h1>
       </div>
-
-
-      
-
-
-      
-
-
-   
-
-
-
-
-
-
 
       <div class="app">
         <i class="Sistemas"></i>
@@ -108,9 +102,11 @@
 	
 
 	<div class="linha">
-		<div class="coluna-20"><b>Nome:</b></div>
-		<div class="coluna-20"><b>Matricula:</b></div>
-		<div class="coluna-20"><b>Email:</b></div>
+		<div class="coluna-18"><b>Nome:</b></div>
+		<div class="coluna-18"><b>Matricula:</b></div>
+		<div class="coluna-18"><b>Email:</b></div>
+		<div class="coluna-18"><b>Curso Recorrente:</b></div>
+		<div class="coluna-18"><b>Tipo:</b></div>
 	 </div>
 
 
@@ -162,6 +158,15 @@
 			
 		</tbody>
 	</table>
+
+	<div class="container">
+		<button class="btn selecionado" onclick="toggleButton(this)">
+			<span>Docente</span>
+		</button>
+		<button class="btn" onclick="toggleButton(this)">
+			<span>Adm</span>
+		</button>
+	</div>
 
 </body>
 </html>
