@@ -4,12 +4,12 @@
 	<meta charset="UTF-8">
 	<title>Tabela com Barra de Pesquisa</title>
 	<link rel="stylesheet" href="teste - Copia.css">
-	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<!-- <link rel="stylesheet" type="text/css" href="estilo.css">
 	<script>
 		function toggleButton(button) {
 			button.classList.toggle("selecionado");
 		}
-	</script>
+	</script> -->
 	
 </head>
 <body>
@@ -43,7 +43,7 @@
     <form>
         <div class="input-group">
           <input type="text" id="search" placeholder="Procurar Curso" autocomplete="off">
-          <button  for="search"><i class="fas fa-search"><img src="./assets/arrowright-removebg-preview.png" alt="arrow-search"></i></button>
+          <button for="search"><i class="fas fa-search"><img src="./assets/arrowright-removebg-preview.png" alt="arrow-search"></i></button>
         </div>
         
         <div class="suggestion-list hidden"></div>
@@ -110,63 +110,70 @@
 	 </div>
 
 
-	<table>
+	<div>
+		<table>
 	
-		<tbody>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			<tr>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-				<td></td>
-			</tr>
-			
-		</tbody>
-	</table>
+			<tbody>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				<tr>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+					<td></td>
+				</tr>
+				
+			</tbody>
+		</table>
+	</div>
 
-	<div class="container">
+	<div>
+		<button id="botao1">Docente</button>
+		<button id="botao2">ADM</button>
+	</div>
+
+	<!-- <div class="container">
 		<button class="btn selecionado" onclick="toggleButton(this)">
 			<span>Docente</span>
 		</button>
 		<button class="btn" onclick="toggleButton(this)">
 			<span>Adm</span>
 		</button>
-	</div>
+	</div> -->
 
 </body>
 </html>
