@@ -399,84 +399,52 @@ table th {
   width: 100%;
 }
 
-
-
-/* .switch {
-    position: relative;
-    display: inline-block;
-    width: 60px;
-    height: 34px;
-    margin-top: 0%;
-    margin-left: 65%;
+ 
+ 
+ .botao-toggle {
+	background-color: #ccc;
+	color: #005594;
+	border: none;
+	padding: 10px;
+	text-align: center;
+	text-decoration: none;
+	display: inline-block;
+	font-size: 16px;
+	margin: 4px 2px;
+	cursor: pointer;
+  margin-left: 18%;
+  border-radius: 10px;
+  width: 90px;
   }
   
-  .switch input {
-    display: none;
+  .botao-toggle:active {
+	background-color: #F78B1F;
+  }
+
+  .botao-toggle.ativo {
+	background-color: #F78B1F;
   }
   
-  .slider {
-    position: absolute;
-    cursor: pointer;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+  .botao-toggle1 {
     background-color: #ccc;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 34px;
-  }
-  
-  .slider:before {
-    position: absolute;
-    content: "";
-    height: 26px;
-    width: 26px;
-    left: 4px;
-    bottom: 4px;
-    background-color: white;
-    -webkit-transition: .4s;
-    transition: .4s;
-    border-radius: 50%;
-  }
-  
-  input:checked + .slider {
-    background-color: #ccc;
-  }
-  
-  input:checked + .slider:before {
-    -webkit-transform: translateX(26px);
-    -ms-transform: translateX(26px);
-    transform: translateX(26px);
-  }
-   */
-
-   button {
-    padding: 10px 20px;
-    font-size: 16px;
-    /* background-color: #ccc; */
-    color: #000;
+    color: #005594;
     border: none;
-    border-radius: 4px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
     cursor: pointer;
-    width: 70px;
-  }
-  
-  button:disabled {
-    opacity: 0.5;
-    cursor: not-allowed;
-  }
+    margin-left: 24%;
+    border-radius: 10px;
+    width: 100px;
+    }
 
-  input:checked + .slider {
-    background-color: #133762;
-  }
-  
-  #botao1 {
-    margin-left: 17%;
-    background-color: #ccc;
-  }
-
-  #botao2 {
-    margin-left: 22%;
-    background-color: #ccc;
-  }
+    .botao-toggle1:active {
+      background-color: #F78B1F;
+      }
+    
+      .botao-toggle1.ativo {
+      background-color: #F78B1F;
+      }
