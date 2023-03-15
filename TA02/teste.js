@@ -1,10 +1,19 @@
-// function toggleButton(button) {
-//   button.classList.toggle("selecionado");
-// }
+var modal = document.querySelector(".modal");
+var triggers = document.querySelectorAll(".trigger");
+var closeButton = document.querySelector(".close-button");
 
+function toggleModal() {
+  modal.classList.toggle("show-modal");
+}
 
-var botaoToggle = document.querySelector('.botao-toggle');
+function windowOnClick(event) {
+  if (event.target === modal) {
+    toggleModal();
+  }
+}
 
-botaoToggle.addEventListener('click', function() {
-  botaoToggle.classList.toggle('ativo');
-});
+for (var i = 0, len = triggers.length; i < len; i++) {
+  triggers[i].addEventListener("click", toggleModal);
+}
+closeButton.addEventListener("click", toggleModal);
+window.addEventListener("click", windowOnClick);
