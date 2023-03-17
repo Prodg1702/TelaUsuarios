@@ -17,3 +17,5 @@ for (var i = 0, len = triggers.length; i < len; i++) {
 }
 closeButton.addEventListener("click", toggleModal);
 window.addEventListener("click", windowOnClick);
+
+
